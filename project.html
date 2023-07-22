@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="landing-page">
+        <!-- header section start -->
+        <header id="myHeader">
+            <div class="container-fluid header_clr">
+                <nav class="navbar navbar-expand-lg py-0">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-lg-0 f_12">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white active" aria-current="page" href="#">Cars</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">Buy</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">Service</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">VR Showroom</a>
+                                </li>
+                            </ul>
+                            <a class="me-auto mb-lg-0 ms-auto text-decoration-none h1 text-uppercase text-white"
+                                href="#">
+                                Logo
+                            </a>
+                            <ul class="navbar-nav me-auto mb-lg-0 ms-auto">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">Our Manifesto</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">VR Brand Exprience</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white" href="#">Logo Philosophy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- header section end -->
+        <!-- banner section start -->
+        <section class="banner position-relative">
+            <div class="">
+                <img src="./images/banner-img.webp" alt="Project Banner" class="img-fluid w-100" width="1920"
+                    height="989" />
+                <p class="position-absolute p-5 m-5 text-white banner_img">Movement<br /><strong>that
+                        inspires</strong>
+                </p>
+                <div class="position-absolute bottom-0 scroll">
+                    <a class="text-white position-absolute scroll-down" address="true" href="#">
+                        Scroll <i class="fa fa-caret-down text-white"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end -->
+
+        <!-- landing-page-body strat -->
+        <div class="landing-page-body">
+            <!-- section-1 start -->
+            <section class="section_1">
+                <div class="text-center my-5">
+                    <p class="insp1"><span>Inspiration</span></p>
+                    <p class="insp_text text-white">
+                        There is something almost poetic about it. <br />
+                        It doesn’t come to you,<br />
+                        You have to reach out to it.<br />
+                        You have to show commitment towards it.<br />
+                        And that commitment comes through movement.<br />
+                        <strong>Because it is movement that ensures…</strong>
+                    </p>
+                </div>
+            </section>
+            <!-- section-1 end -->
+            <section class="section_2">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="videocover videocovers my-3">
+                            <div id="myDIV1">
+                                <button onclick="playVid1()" type="button">
+                                    <span onclick="myFunction1()">
+                                        <img src="./images/play_btn.webp" class="img-fluid playBtn" width="91"
+                                            height="91" loading="lazy">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="yt_video_wrapper">
+                                <video id="myVideo1" width="900" height="506" preload="none" controls loop
+                                    poster="./images/video1.webp">
+                                    <source src="https://www.timeus.in./images/Home1.mp4" type="video/mp4">
+                                </video>
+                                <!-- If we don't want controls button then remove the "controls" attr -->
+                            </div>
+                            <img src="./images/video1.webp" class="img-fluid w-100 videocimg" width="1920" height="1080"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <p class="insp2">That you are<br>
+                            in the right place<br /><span class="insp_span">at the right time.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section_3">
+                <div class="row">
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <p class="insp2">That helps <br>you find<br><span class="insp_span">your move.</span></p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="videocover videocovers my-3">
+                            <div id="myDIV2">
+                                <button onclick="playVid2()" type="button">
+                                    <span onclick="myFunction2()">
+                                        <img src="./images/play_btn.webp" class="img-fluid playBtn" width="91"
+                                            height="91" loading="lazy">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="yt_video_wrapper">
+                                <video id="myVideo2" width="900" height="506" preload="none" controls loop
+                                    poster="./images/video2.webp">
+                                    <source src="https://www.timeus.in./images/clients.mp4" type="video/mp4">
+                                </video>
+                                <!-- If we don't want controls button then remove the "controls" attr -->
+                            </div>
+                            <img src="./images/video2.webp" class="img-fluid w-100 videocimg" width="1920" height="1080"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_4">
+                <div class="">
+                    <div class="NYvideocover">
+                        <div class="youtube" data-embed="wl8czEYsf3w">
+                            <div class="play-button"></div>
+                        </div>
+                        <img src="./images/play_btn.webp" alt="Player Stats Feature" class="button playBtn" width="91"
+                            height="91" loading="lazy">
+                        <img src="./images/video3.webp" width="1280" height="720" class="img-fluid w-100 backimgsd"
+                            alt="Player Stats Feature" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="section_5">
+                <div class=" d-flex justify-content-center align-items-center">
+                    <p class="insp1 insp3 text-center">That enable you to <br />
+                        <span>leave a mark</span>
+                        <br>on the universe.
+                    </p>
+                </div>
+            </section>
+            <section class="section_6">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="videocover videocovers my-3">
+                            <div id="myDIV3">
+                                <button onclick="playVid3()" type="button">
+                                    <span onclick="myFunction3()">
+                                        <img src="./images/play_btn.webp" class="img-fluid playBtn" width="91"
+                                            height="91" loading="lazy">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="yt_video_wrapper">
+                                <video id="myVideo3" width="900" height="506" preload="none" controls loop
+                                    poster="./images/video4.webp">
+                                    <source src="https://www.timeus.in./images/Work.mp4" type="video/mp4">
+                                </video>
+                                <!-- If we don't want controls button then remove the "controls" attr -->
+                            </div>
+                            <img src="./images/video4.svg" class="img-fluid w-100 videocimg" width="1920" height="1080"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <p class="insp2">That lets you <br>groove to<br><span class="insp_span">your tune.</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section_7">
+                <div class="row">
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <p class="insp2">And that makes<br><span class="insp_span">your dreams</span>
+                            <br>come true.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="videocover videocovers my-3">
+                            <div id="myDIV4">
+                                <button onclick="playVid4()" type="button">
+                                    <span onclick="myFunction4()">
+                                        <img src="./images/play_btn.webp" class="img-fluid playBtn" width="91"
+                                            height="91" loading="lazy">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="yt_video_wrapper">
+                                <video id="myVideo4" width="900" height="506" preload="none" controls loop
+                                    poster="./images/video5.webp">
+                                    <source src="https://www.timeus.in./images/Award.mp4" type="video/mp4">
+                                </video>
+                                <!-- If we don't want controls button then remove the "controls" attr -->
+                            </div>
+                            <img src="./images/video5.svg" class="img-fluid w-100 videocimg" width="1920" height="1080"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_8">
+                <div class="row">
+                    <div class="">
+                        <p class="insp2 insp4">Because in the end,<br>it is <span class="insp_span">Movement that
+                                inspire </span>us all.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section_9">
+                <div>
+                    <div class="videocover videocovers my-3">
+                        <div id="myDIV5">
+                            <button onclick="playVid5()" type="button">
+                                <span onclick="myFunction5()">
+                                    <img src="./images/play_btn.webp" class="img-fluid playBtn" width="91" height="91"
+                                        loading="lazy">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="yt_video_wrapper">
+                            <video id="myVideo5" width="900" height="506" preload="none" controls loop
+                                poster="./images/video6.webp">
+                                <source src="https://www.timeus.in./images/AboutUs.mp4" type="video/mp4">
+                            </video>
+                            <!-- If we don't want controls button then remove the "controls" attr -->
+                        </div>
+                        <img src="./images/video6.svg" class="img-fluid w-100 videocimg" width="1920" height="1080"
+                            loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="section_10 py-5">
+                <div class="text-center">
+                    <p class="insp2 py-3">What inspires you?
+                    </p>
+                    <div class="">
+                        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item mx-1 w_100" role="presentation">
+                                <button class="nav-link w_100 active" id="trevelling" data-bs-toggle="pill"
+                                    data-bs-target="#trevell" type="button" role="tab" aria-controls="trevell"
+                                    aria-selected="true">Travelling</button>
+                            </li>
+                            <li class="nav-item mx-1 w_100" role="presentation">
+                                <button class="nav-link w_100" id="driving" data-bs-toggle="pill"
+                                    data-bs-target="#drive" type="button" role="tab" aria-controls="drive"
+                                    aria-selected="false">Driving</button>
+                            </li>
+                            <li class="nav-item mx-1 w_100" role="presentation">
+                                <button class="nav-link w_100" id="binge" data-bs-toggle="pill"
+                                    data-bs-target="#watching" type="button" role="tab" aria-controls="watching"
+                                    aria-selected="false">Binge
+                                    Watching</button>
+                            </li>
+                            <li class="nav-item mx-1 w_100" role="presentation">
+                                <button class="nav-link w_100" id="reading" data-bs-toggle="pill" data-bs-target="#read"
+                                    type="button" role="tab" aria-controls="pills-disabled"
+                                    aria-selected="false">Reading</button>
+                            </li>
+                            </li>
+                            <li class="nav-item mx-1 w_100" role="presentation">
+                                <button class="nav-link w_100" id="workingout" data-bs-toggle="pill"
+                                    data-bs-target="#work" type="button" role="tab" aria-controls="workingOut"
+                                    aria-selected="false">Working
+                                    out</button>
+                            </li>
+                            </li>
+                            <li class="nav-item mx-1 w_100" role="presentation">
+                                <button class="nav-link w_100" id="morningWalk" data-bs-toggle="pill"
+                                    data-bs-target="#morning" type="button" role="tab" aria-controls="morningWalk"
+                                    aria-selected="false">Morning
+                                    walk</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="trevell" role="tabpanel"
+                                aria-labelledby="trevelling" tabindex="0">
+                                <p class="insp5">
+                                    1. Your soul wanders. It seeks
+                                    inspiration
+                                    at every turn.
+                                    In every object. At every destination it visits.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="drive" role="tabpanel" aria-labelledby="driving"
+                                tabindex="0">
+                                <p class="insp5">
+                                    2. Your soul wanders. It seeks
+                                    inspiration
+                                    at every turn.
+                                    In every object. At every destination it visits.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="watching" role="tabpanel" aria-labelledby="binge"
+                                tabindex="0">
+                                <p class="insp5">
+                                    3. Your soul wanders. It seeks
+                                    inspiration
+                                    at every turn.
+                                    In every object. At every destination it visits.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="read" role="tabpanel" aria-labelledby="reading" tabindex="0">
+                                <p class="insp5">
+                                    4. Your soul wanders. It seeks
+                                    inspiration at every turn.
+                                    In every object. At every destination it visits.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="workingOut"
+                                tabindex="0">
+                                <p class="insp5">
+                                    5. Your soul wanders. It seeks
+                                    inspiration at every turn.
+                                    In every object. At every destination it visits.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="morning" role="tabpanel" aria-labelledby="morningwalk"
+                                tabindex="0">
+                                <p class="insp5">
+                                    6. Your soul wanders. It seeks
+                                    inspiration at every turn.
+                                    In every object. At every destination it visits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button d-flex justify-content-center align-items-center">
+                        <button class="badge share">Share</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="py-5 footer">
+            <div class="container">
+                <h2 class="mb-5">Products that inspires</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="./images/car1.webp" alt="">
+                        <p class="mt-5">Name of Car <br />
+                            <button class="button"><span>Know More </span></button>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="./images/car2.webp" alt="">
+                        <p class="mt-5">Name of Car <br />
+                            <button class="button"><span>Know More </span></button>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="./images/car3.webp" alt="">
+                        <p class="mt-5">Name of Car <br />
+                            <button class="button"><span>Know More </span></button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- script section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- fixed header script start -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.onscroll = function () { myFunction() };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        });
+
+    </script>
+    <!-- fixed header script end -->
+    <!-- video thumbnail script start -->
+    <script>
+        // video1 script
+        var vid1 = document.getElementById("myVideo1");
+        function playVid1() {
+            vid1.play();
+        }
+        function pauseVid() {
+            vid1.pause();
+        }
+        function myFunction1() {
+            var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        // video2 script
+        var vid2 = document.getElementById("myVideo2");
+        function playVid2() {
+            vid2.play();
+        }
+        function pauseVid() {
+            vid2.pause();
+        }
+        function myFunction2() {
+            var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        // video3 script
+        var vid3 = document.getElementById("myVideo3");
+        function playVid3() {
+            vid3.play();
+        }
+        function pauseVid() {
+            vid3.pause();
+        }
+        function myFunction3() {
+            var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        // video4 script
+        var vid4 = document.getElementById("myVideo4");
+        function playVid4() {
+            vid4.play();
+        }
+        function pauseVid() {
+            vid4.pause();
+        }
+        function myFunction4() {
+            var x = document.getElementById("myDIV4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        // video5 script
+        var vid5 = document.getElementById("myVideo5");
+        function playVid5() {
+            vid5.play();
+        }
+        function pauseVid() {
+            vid5.pause();
+        }
+        function myFunction5() {
+            var x = document.getElementById("myDIV5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // youtube video script
+        (function () {
+            var youtube = document.querySelectorAll(".youtube");
+            for (var i = 0; i < youtube.length; i++) {
+                youtube[i].addEventListener("click", function () {
+                    var iframe = document.createElement("iframe");
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "");
+                    iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+                    this.innerHTML = "";
+                    this.appendChild(iframe);
+                });
+            };
+
+        })();
+    </script>
+    <script>
+        $(function () {
+            $('.scroll-down').click(function () {
+                $('html, body').animate({ scrollTop: $('section.section_1').offset().top });
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
